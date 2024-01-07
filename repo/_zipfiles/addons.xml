@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.program.sKullswizard" name="[COLOR indianred]sKulls [/COLOR]Wizard" version="1.1" provider-name="sKulls inc.">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.six" />
+        <import addon="script.kodi.android.update" optional="true" version="1.1.7" />
+        <import addon="script.speedtester" optional="true" version="1.1.2" />
+    </requires>
+
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>executable</provides>
+    </extension>
+
+    <extension point="xbmc.service" library="startup.py" start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR indianred]sKulls [/COLOR]Wizard</summary>
+        <description lang="en">Der [COLOR indianred]sKulls [/COLOR]Wizard bietet viele Wartungsfunktionen, selektive Add-on-Datenspeicherung und automatisierte Build-Installationen.</description>
+        <platform>all</platform>
+        <reuselanguageinvoker>false</reuselanguageinvoker>
+        <source></source>
+        <news>
+        Nach langer und kommt wieder mal ein klasse deutsches Kodi-Build, was so gut wie alles kann :)
+        </news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+    <addon id="repository.skullsinc" name="sKulls inc. Repo" version="1.0" provider-name="sKulls inc. Team">
+        <extension point="xbmc.addon.repository" name="sKulls inc. Repo">
+		           <dir>
+			            <info compressed="false">https://raw.githubusercontent.com/SkullSplitter2020/sKulls.Repo/main/repo/_zipfiles/addons.xml</info>
+	        		    <checksum>https://raw.githubusercontent.com/SkullSplitter2020/sKulls.Repo/main/repo/_zipfiles/addons.xml.md5</checksum>
+           				<datadir zip="true">https://raw.githubusercontent.com/SkullSplitter2020/sKulls.Repo/main/repo/_zipfiles/</datadir>
+            <hashes>false</hashes>
+		            </dir>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary lang="en_GB">sKulls Repository</summary>
+            <description lang="en_GB">Repo from the sKulls inc. Team for you.</description>
+            <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
+
+<addon id="script.skullslittle.help" name="sKulls little Help" version="1.0.2" provider-name="sKulls">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="de">sKulls kleine Hilfe !</summary>
+		<description lang="de">
+Willkommen zu sKulls kleiner Hilfe !
+
+BlaBlaBla
+BlaBlaBla
+BlaBlaBla
+BlaBlaBla
+BlaBlaBla
+BlaBlaBla
+
+		</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum>http://forum.kodi.tv/showthread.php?tid=209948</forum>
+		<source>https://github.com/zag2me/script.hello.world</source>
+		<website>sKulls-inc.eu</website>
+		<email>prozessor_1999@yahoo.de</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+		</assets>
+		<news>Updated the addon to use new addon.xml metadata</news>
+	</extension>
+</addon>
+
+<addon id="script.skullslittle.iptvhelp" name="sKulls little IPTV Help" version="1.0.2" provider-name="sKulls">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+	</requires>
+	<extension point="xbmc.python.script" library="addon.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="de">sKulls kleine IPTV Hilfe !</summary>
+		<description lang="de">
+sKulls kleiner IPTV Hilfe !
+
+Text PopUp was Tipps gibt, wenn das IPTV nicht funktioniert !
+
+		</description>
+		<license>GNU General Public License, v2</license>
+		<language></language>
+		<forum></forum>
+		<source></source>
+		<website>sKulls-inc.eu</website>
+		<email>prozessor_1999@yahoo.de</email>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart>fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+		</assets>
+		<news></news>
+	</extension>
+</addon>
+</addons>
